@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -63,4 +64,71 @@ box.forEach(element => {
     element.style.color=`rgb(${c1},${c2},${c3})`
     element.style.backgroundColor=`rgb(${bgc1},${bgc2},${bgc3})`
 });
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 23px;
+        }
+        .box{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100px;
+            width: 100px;
+            border: 2px solid black; 
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+    Given 5 boxes, Assign a random color and a random background to each box using DOM concepts
+    -->
+    <div class="container">
+        <div class="box">Box</div>
+        <div class="box">Box</div>
+        <div class="box">Box</div>
+        <div class="box">Box</div>
+        <div class="box">Box</div>
+    </div>
+</body>
+</html>
+
+<script>
+// let cn = document.querySelector(".container")
+// for(let i=0;i<cn.children.length;i++){
+//     let a = Math.floor(Math.random()*(255-0+1)+0)
+//     let b = Math.floor(Math.random()*(255-0+1)+0)
+//     let c = Math.floor(Math.random()*(255-0+1)+0)
+//     let d = Math.floor(Math.random()*(255-0+1)+0)
+//     let e = Math.floor(Math.random()*(255-0+1)+0)
+//     let f = Math.floor(Math.random()*(255-0+1)+0)
+//     cn.children[i].style.color=`rgb(${a},${b},${c})`
+//     cn.children[i].style.backgroundColor=`rgb(${d},${e},${f})`
+// }
+
+//more optimized code
+function rand(){
+    return Math.floor(Math.random()*256)
+}
+let box= document.querySelectorAll(".box")
+box.forEach(element => {
+    let c1=rand()
+    let c2=rand()
+    let c3=rand()
+    let bgc1=rand()
+    let bgc2=rand()
+    let bgc3=rand()
+    element.style.color=`rgb(${c1},${c2},${c3})`
+    element.style.backgroundColor=`rgb(${bgc1},${bgc2},${bgc3})`
+});
+>>>>>>> 766d39028e4df107049299f774da1ce18fe5ee58
 </script>
