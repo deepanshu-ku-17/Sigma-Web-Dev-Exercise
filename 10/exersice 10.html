@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<script>
+let b_name=""
+let Adjectives={
+    1:"Crazy",
+    2:"Amazing",
+    3:"Fire"
+}
+
+let Shop_Name={
+    1:"Engine",
+    2:"Foods",
+    3:"Garments"
+}
+
+let Another_Word={
+    1:"Bros",
+    2:"Limited",
+    3:"Hub"
+}
+          //Math.floor( Math.random()* (max-min+1))+min
+let a = Math.floor( Math.random()* (3-1+1))+1 
+let b = Math.floor( Math.random()* (3-1+1))+1 
+let c = Math.floor( Math.random()* (3-1+1))+1 
+
+b_name = Adjectives[a]+" "+Shop_Name[b]+" "+Another_Word[c]
+
+console.log(b_name)
+
+</script>

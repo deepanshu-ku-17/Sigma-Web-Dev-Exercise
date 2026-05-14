@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    let input = Number(prompt("enter the number"))
+    let arr=[]
+    for(input; input>0; input--){
+        arr.push(input)
+    }
+    console.log(arr)
+    let result=arr.reduce(
+        ((a,b) =>a*b) 
+    )
+    console.log(result)
+
+</script>
