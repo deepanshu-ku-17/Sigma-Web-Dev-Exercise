@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+</body>
+</html>
+
+<script>
+function first() {
+    return new Promise ((resolve)=>{
+        let first_line = document.createElement("h3")
+        document.body.append(first_line)
+
+        let dots = ""
+
+        let interval = setInterval(() => {
+            dots += "."
+            if (dots === "....") dots = ""
+            first_line.innerText = "Initializing Hacking" + dots
+        }, 300)
+
+        setTimeout(() => {
+            clearInterval(interval)
+            first_line.innerText = "Initializing Hacking complete"
+            resolve()
+        }, 5000);
+    })
+}
+
+function second() {
+    return new Promise ((resolve)=>{
+        let second_line = document.createElement("h3")
+        document.body.append(second_line)
+
+        let dots = ""
+
+        let interval = setInterval(() => {
+            dots += "."
+            if (dots === "....") dots = ""
+            second_line.innerText = "Reading your files" + dots
+        }, 300)
+
+        setTimeout(() => {
+            clearInterval(interval)
+            second_line.innerText = "Reading your files complete"
+            resolve()
+        }, 5000);
+    })
+}
+
+function third() {
+    return new Promise ((resolve)=>{
+        let third_line = document.createElement("h3")
+        document.body.append(third_line)
+
+        let dots = ""
+
+        let interval = setInterval(() => {
+            dots += "."
+            if (dots === "....") dots = ""
+            third_line.innerText = "Password files Detected" + dots
+        }, 300)
+
+        setTimeout(() => {
+            clearInterval(interval)
+            third_line.innerText = "Password files Detected complete"
+            resolve()
+        }, 5000);
+    })
+}
+
+function fourth() {
+    return new Promise ((resolve)=>{
+        let fourth_line = document.createElement("h3")
+        document.body.append(fourth_line)
+
+        let dots = ""
+
+        let interval = setInterval(() => {
+            dots += "."
+            if (dots === "....") dots = ""
+            fourth_line.innerText = "Sending data to server" + dots
+        }, 300)
+
+        setTimeout(() => {
+            clearInterval(interval)
+            fourth_line.innerText = "Sending data to server complete"
+            resolve()
+        }, 7000);
+    })
+}
+
+function fifth() {
+    return new Promise ((resolve)=>{
+        let fifth_line = document.createElement("h3")
+        document.body.append(fifth_line)
+
+        let dots = ""
+
+        let interval = setInterval(() => {
+            dots += "."
+            if (dots === "....") dots = ""
+            fifth_line.innerText = "Cleaning up" + dots
+        }, 300)
+
+        setTimeout(() => {
+            clearInterval(interval)
+            fifth_line.innerText = "Cleaning up complete"
+            resolve()
+        }, 3000);
+    })
+}
+
+async function main() {
+    await first()
+    await second()
+    await third()
+    await fourth()
+    await fifth()
+}
+main()
+</script>

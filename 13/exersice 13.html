@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container{
+        border: 2px solid black;
+        display: flex;
+        padding: 2vw;
+        gap: 20px;
+    }
+    .card{
+        border-radius:20px;
+        position: relative;
+        height: 150px;
+        width: 300px;
+        overflow: hidden;
+    }
+    .thumbnail{
+        border-radius:20px;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+    .duration{
+        background-color: #686868bb;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        margin: 12px;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="card">
+            <img class="thumbnail" src="https://i.ytimg.com/vi/tVzUXW6siu0/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLACwWOixJVrKLFindK92kYMgTcQbw" alt="">
+            <div class="duration">320:12</div>
+        </div>
+        <div class="textd">
+            <h3 class="title">Introduction to Backend | Sigma Web Dev video #2</h3>
+            <span class="cname">CodeWithHarry</span>
+            <span class="views">100</span>
+            <span class="monthsOld">2 months ago</span>
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+<script>
+    function createCard(title, cName, views, monthsOld, duration, thumbnail){
+        
+
+
+        document.querySelector(".title").textContent = title
+        document.querySelector(".cname").textContent = cName
+
+        let fviews = views
+
+        if(fviews < 1000){
+            fviews = fviews + " views"
+        }
+        else if(fviews < 1000000){
+            fviews = Math.floor(fviews/100) / 10 + "K views"
+        }
+        else{
+            fviews = Math.floor(fviews/100000) / 10 + "M views"
+        }
+
+        document.querySelector(".views").textContent = fviews
+        document.querySelector(".monthsOld").textContent = monthsOld
+        document.querySelector(".duration").textContent = duration
+        document.querySelector(".thumbnail").src = thumbnail
+}
+
+// ✅ inputs
+let t = prompt("enter your title")
+let c = prompt("enter your channel name")
+let v = Number(prompt("enter your views count"))
+let m = prompt("enter your month old video")
+let d = prompt("enter your video duration")
+let th = prompt("enter your thumbnail url")
+
+createCard(t, c, v, m, d, th)
+
+</script>
