@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<script>
+    //ques 1
+    let age =prompt("enter your age")
+    age =Number(age)
+    console.log((age>10 && age<20)? "Go Ahead" : "No")
+
+    //ques 2
+    switch (age) {
+        case 15: //switch(age)===case value:
+            console.log("perfect between")
+            break;
+    
+        default:
+            console.log("humm sochna padega")
+            break;
+    }
+
+    //ques 3
+    console.log((age%2==0 && age%3==0)? "divide ho gya" : "bhot dhuk hua")
+
+    //ques 4
+    console.log((age%2==0 || age%3==0)? "kisi se to divide ho gya" : "nirlaj itna bhi nhi kr paya")
+
+    //ques 5
+    console.log((age>=18)? "you can drive(ladka bda ho gya)":"Nabalik jaka cycle chla")
+</script>

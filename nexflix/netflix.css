@@ -1,0 +1,418 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: black;
+    color: white;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+}
+
+.main{
+    background-image: url("assets/images/bg.jpg");
+}
+
+.box{
+    background-color: #0000008a;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 9vw;
+}
+
+.navlogo{
+    width: 8vw;
+    height: 10vh;
+
+}
+
+.drop{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 40vw;
+    gap: 10px;
+}
+
+.drop select{
+    height: 5vh;
+    width: 10vw;
+    color: white;
+    background-color: transparent;
+    border-radius: 5px;
+}
+
+.signin{
+    color: white;
+    background-color: red;
+    border: 1.5px solid white;
+    border-radius: 5px;
+    height: 5vh;
+    width: 5vw;
+
+}
+
+.hmain{
+    margin-top: 20vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hmain span{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.span1,.span2{
+    font-size: 56px;
+    font-weight: 900;
+    margin-bottom: 2.5vh;
+}
+
+.span3{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 5vh;
+}
+
+.span4{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.maild{
+    margin-top: 5vh;
+    width: 50vw;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 12vh;
+}
+
+.maild input{
+    background-color: rgba(0, 0, 0, 0.546);
+    width: 20vw;
+    height: 8vh;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+.maild input::placeholder{
+    padding: 10px;
+    font-size: x-large;
+    color: white;
+}
+
+.b1{
+    height: 8vh;
+    width: 8vw;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: red;
+    border: 2px solid white;
+    border-radius: 8px;
+}
+
+.curve{
+    position: relative;
+    height: 10vh;
+    border-top-left-radius: 50% 100%;
+    border-top-right-radius: 50% 100%;
+    background: linear-gradient(to right, rgba(33, 13, 22, 1) 16%, rgba(184, 40, 105, 1), rgba(229, 9, 20, 1), rgba(184, 40, 105, 1), rgba(33, 13, 22, 1) 84%);
+    border-top: 4px solid transparent;
+    background-clip: padding-box;
+}
+.curve::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 50% 120%;
+    border-top-right-radius: 50% 120%;
+    background: radial-gradient(50% 500% at 50% -420%, rgba(64, 97, 231, 0.4) 80%, rgba(0, 0, 0, 0.1) 100%), black;
+    padding-top: 6px;
+    background-clip: content-box;
+}
+.trending{
+    display: flex;
+    flex-direction: column;
+}
+
+.theading,.rmheading,.qheading{
+    padding-left: 3%;
+    font-weight: 600;
+    font-size: xx-large;
+}
+.movied{
+    margin-top: 5vh;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+.movie{
+    height: 33.2vh;
+    width: 11.5vw;
+    margin: 10px;
+    border-radius: 10px;
+    background-image:url("https://occ-0-4346-3647.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABYWfklg5D5btQoekHBjGHSFXDW_EezXrT97RnSaEwirkVnCt91QaQlcPWCxtfkSrW04hOcHguRrAMgyKTJzs2_PKkFkbs60DHC4.webp?r=05f");
+    background-repeat: no-repeat;
+}
+.num{
+    -webkit-text-fill-color: rgb(0, 0, 0);
+    -webkit-text-stroke: 2px white;
+    font-size: 8rem;
+    position: absolute;
+    left: -1vw;
+    top: 17vh;
+}
+
+.mnbox{
+    position: relative;
+    display: inline-block;
+}
+
+.mnbox:hover{
+    transform: scale(1.08);
+}
+
+.rmain{
+    padding-top: 2vh;
+}
+
+.rbox{
+    display: flex;
+    justify-content: space-around;
+    padding: 4vh;
+}
+.reason{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    height: 35vh;
+    width: 20vw;
+    border-radius: 10px;
+    background: linear-gradient(149deg, #192247 0%, #210e17 96.86%);
+}
+
+.rheading{
+    font-size:xx-large;
+    font-weight: 600;
+    padding: 2%;
+}
+.rsubheading{
+    font-size:large;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3%;
+    padding: 2%;
+}
+.tv{
+    align-self: flex-end;
+
+}
+
+.db{
+    align-self: flex-end;
+
+}
+
+.pop{
+    align-self: flex-end;
+
+}
+.em{
+    align-self: flex-end;
+
+}
+
+.qbox{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.qustions{
+    height: 7vh;
+    width: 80vw;
+    background-color: rgba(178, 172, 172, 0.324);
+    display: flex;
+    align-items: center;
+    font-size: x-large;
+    margin: 5px;
+    padding-left: 1vw;
+}
+
+.qustions:hover{
+    background-color: rgba(206, 199, 199, 0.541);
+}
+
+.maildiv{
+    margin-top: 8vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mailt{
+    font-size: x-large;
+    display: flex;
+    justify-content: center;
+}
+
+.mailb{
+    margin: 2vh;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 40vw;
+    
+}
+
+.mailb input{
+    height: 7vh;
+    width: 25vw;
+    border: none;
+    background-color: rgba(94, 94, 94, 0.338);
+    color: white;
+    border-radius: 8px;
+}
+
+.mailb input::placeholder{
+    color: rgba(255, 255, 255, 0.614);
+    padding: .5vw;
+    font-size: 16px;
+    font-weight:500;
+}
+.mailb button{
+    color: white;
+    background-color: red;
+    height: 7vh;
+    width: 12vw;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border: 2px solid white;
+}
+.gsarrow{
+    margin-left: .5vh;
+}
+
+.fmain{
+    padding-left: 4vw;
+    margin-top: 8vh;
+}
+
+.links{
+    margin-top: 5vh;
+    display: grid;
+    grid-template-columns: 10vw 10vw 10vw 10vw;
+    justify-content: center;
+    align-items: center;
+    row-gap: 2vh;
+    column-gap: 10vw;
+}
+
+a{
+    color: white;
+}
+
+.bfdrop{
+    margin: 5vh;
+    border: 1px solid rgb(255, 255, 255);
+    width: 9vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 5px;
+}
+.bfdrop select{
+    background-color: transparent;
+    color: white;
+    border: none;
+    appearance: none;
+    font-size: 1rem;
+}
+
+.netflixspan{
+    display: block;
+    margin: 0% 0% 2% 0%;
+}
+
+.reserve{
+    color: rgba(255, 255, 255, 0.703);
+}
+
+@media screen and (min-width: 768px) and (max-width: 1333px){ 
+    .drop button{
+        width: 10vw;
+    }
+    .maild input::placeholder{
+        font-size: 1rem;
+    }
+    .maild button{
+        width: 15vw;
+    }
+    .movied{
+        display: grid;
+        grid-template-columns: 25% 25% 25%;
+        gap: 10%;
+        height: 125vh;
+    }
+    .mnbox{
+        margin: 5%;
+        height: 50vh;
+    }
+
+    .movie{
+        height: 90%;
+        width: 90%;
+        object-fit:contain;
+    }
+    .num{
+        left: -3vw;
+    }
+    .rbox{
+        display: grid;
+        height: 160vh;
+        grid-template-columns: 40% 40% ;
+    }
+    .reason{
+        height: 65vh;
+        width: 30vw;
+    }
+    .qustions{
+        font-size: 1rem;
+        font-weight: 600;
+    }
+    .mailb button{
+        width: 50%;
+        margin: 2vw;
+        font-size: .8rem;
+    }
+    .gsarrow{
+        width: 10%;
+    }
+    .bfdrop{
+        width: 20%;
+    }
+}

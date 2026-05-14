@@ -1,0 +1,9 @@
+Guess the Number
+Snake Water Gun
+Tell me a Joke
+Digital Clock
+Todo List
+Password Generator
+Hacker Program
+Alarm Clock
+Spotify Clone (simple version)

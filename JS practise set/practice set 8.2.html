@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="wn" type="name" placeholder="website name">
+    <input id="wu" type="url" placeholder="website url">
+    <button>add</button>
+</body>
+</html>
+
+<script>
+    document.getElementsByTagName("button")[0].addEventListener("click", function save()
+{
+    let website_name = document.getElementById("wn").value
+    let website_url = document.getElementById("wu").value
+    console.log(website_name,website_url)
+    let div = document.createElement("div")
+    div.className="bookmark"
+    div.innerHTML = `<a href="${website_url}">${website_name}</a>`
+    document.body.append(div)
+});
+
+//incomplete maybe ques dene se phele topic nhi padhaya hai
+
+</script>

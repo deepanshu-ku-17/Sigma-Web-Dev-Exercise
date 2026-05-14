@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<script>
+    let number_of_guesses=0
+    let random_number= Math.floor(Math.random()*(100-1+1))+1
+    console.log(random_number)
+    let guess= ""
+    while(random_number!=guess){
+        guess= Number(prompt("enter the number"))
+        number_of_guesses+=1
+        if(random_number<guess){
+            alert("uhhmm humm number chota hai")
+        }
+        else if(random_number>guess){
+            alert(" humm number bda hai hai")
+        }
+        else{
+            alert(`aakhir kaar yahi hai number ${random_number} `)
+        }
+    }
+    let score= 100- number_of_guesses
+    alert(`your total score is ${score}`)
+</script>

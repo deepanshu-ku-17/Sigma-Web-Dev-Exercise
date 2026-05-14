@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    function prog1() {
+        return new Promise((resolve,reject)=>{
+            setTimeout(() => {
+                resolve("task 1 complete")
+            }, 2000);
+        })
+    }
+
+    function prog2() {
+        return new Promise((resolve,reject)=>{
+            setTimeout(() => {
+                resolve("task 2 complete")
+            }, 2000);
+        })
+    }
+
+    function prog3() {
+        return new Promise((resolve,reject)=>{
+            setTimeout(() => {
+                resolve("task 3 complete")
+            }, 2000);
+        })
+    }
+
+    async function one_by_one() {
+        let ans1= await prog1()
+        console.log(ans1)
+
+        let ans2= await prog2()
+        console.log(ans2)
+
+        let ans3= await prog3()
+        console.log(ans3)
+    }
+
+    async function parllel() {
+        let parl= await Promise.all([prog1(),prog2(),prog3()])
+        console.log(parl)
+    }
+
+async function main() {
+    console.time("Sequential");
+    await one_by_one();
+    console.timeEnd("Sequential");
+
+    console.time("Parallel");
+    await parllel();
+    console.timeEnd("Parallel");
+}
+
+main();
+</script>

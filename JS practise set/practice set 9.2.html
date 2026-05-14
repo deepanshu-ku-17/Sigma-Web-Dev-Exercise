@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<script>
+    function dynamic() {
+        return new Promise((resolve, reject)=>{
+        console.log("file creation start...")
+        let file = document.createElement("script")
+        file.src = "practiceset9.2.js"
+        console.log("file loading...")
+        file.onload=()=>resolve("file load ho gyi")
+        file.onerror=()=>reject("file load he nhi hua")
+        document.body.append(file)
+        });
+    }
+    async function main() {
+        let ans = await dynamic()
+        alert(`${ans} `)
+    }
+    main()
+</script>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    // ques 1
+    let obj ={
+        harry: 98,
+        roahn:70,
+        aakash: 7
+    }
+    console.log(Object.values(obj))
+
+    // ques 2
+    for (const i in obj) {
+        console.log(i)
+        val= obj[i]
+        console.log(val)
+    }
+
+    //ques 3
+    let a=5
+    let user =0
+    while (a!=user) {
+        user=Number(prompt("enter your number"))
+        console.log("try again")
+    }
+
+    //ques 4
+    function meanx(a,b,c,d,e) {
+        let mean_value=(a+b+c+d+e)/5
+        console.log(mean_value)
+    }
+
+    meanx(1,2,3,4,5)
+</script>

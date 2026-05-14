@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+    <nav class="navv">
+        <ul class="ull">
+            <li class="lii">item 1</li>
+            <li class="lii">item 2</li>
+            <li class="lii">item 3</li>
+            <li class="lii">item 4</li>
+            <li class="lii">item 5</li>
+        </ul>
+    </nav>
+</body>
+</html>
+<style>
+    .navv{
+        background-color: black;
+        height: 50px;
+        width: 100%;
+    }
+    .ull{
+        display: flex;
+        list-style-type: none;
+        justify-content: space-around;
+        align-items: center;
+        height: 100%;
+    }
+    .lii{
+        color: white;
+        border: 2px solid white;
+        padding: 2px;
+    }
+</style>
+
+<script>
+    //ques 1
+        //approach 1
+    // let arr=document.getElementsByClassName("lii")
+    // arr[0].style.backgroundColor="red"
+        //approach 2
+    // let nav = document.querySelector(".navv")
+    // let ul = nav.firstElementChild
+    // let lifirst= ul.firstElementChild
+    // lifirst.style.backgroundColor="yellow"
+
+    //ques 2
+    //top table tbody automatically aa jayega
+    // Browser jab HTML parse karta hai, to wo DOM tree banata hai rules ke according
+    // Table ke rules me:
+    // <tr> direct <table> ka child nahi hona chahiye — usko <tbody> ke andar hona chahiye
+
+    //ques 3
+    // let nav = document.querySelector(".navv")
+    // let ul = nav.firstElementChild
+    // let lifirst = ul.firstElementChild
+    // let lilast = ul.lastElementChild
+    // lifirst.style.backgroundColor="yellow"
+    // lilast.style.backgroundColor="red"
+
+    //ques 4
+    let navv= document.querySelector(".navv")
+    let ul = navv.firstElementChild
+    for(let i=0;i<ul.children.length;i++){
+        ul.children[i].style.backgroundColor="red"
+    }
+
+</script>
