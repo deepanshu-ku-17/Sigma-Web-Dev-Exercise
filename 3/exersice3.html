@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>card</title>
+    </head>
+    <body>
+        <div class="card">
+            <div class="img-div">
+                <img src="lake-img.png" alt="lake Image" />
+            </div>
+            <ul>
+                <li>Nature</li>
+                <li>Lake</li>
+            </ul>
+            <h1>Card Title</h1>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora omnis asperiores consectetur accusantium unde distinctio odit corrupti. Culpa voluptatum ut doloribus dolor quo perferendis sunt facilis, mollitia sit incidunt, pariatur, itaque nisi dicta alias iste nam et. Dolorem distinctio unde ratione possimus dolores enim animi harum praesentium reiciendis adipisci dignissimos blanditiis cum, illum cumque suscipit, optio velit, quam numquam modi? Placeat temporibus vitae beatae, tenetur neque harum in iusto modi expedita optio sint debitis. Minima quae dolorem veritatis placeat eaque in neque? Dicta quia cumque ab iure distinctio provident repellendus.
+            </p>
+            <button>Read More</button>
+        </div>
+    </body>
+</html>
+
+<style>
+    @import url("https://fonts.googleapis.com/css2?family=Saira+Stencil:ital,wght@0,100..900;1,100..900&family=Shadows+Into+Light&display=swap");
+
+  * {
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(202, 231, 231);
+    font-family:'Saira Stencil','Shadows Into Light','Courier New', Courier, monospace;
+    }
+.card {
+    border: 1px solid rgb(62, 62, 62);
+    width: 80vw;
+    height: 80vh;
+    position: relative;
+    top: 8vh;
+    left: 8vw;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px 2px rgb(67, 67, 67);
+    background-color: whitesmoke;
+    }
+.img-div{
+    position: absolute;
+    top: 3vh;
+    left: 4vw;
+    right: 4vw;
+    border-radius: 12px;
+    box-shadow: 0px 0px 10px 1px rgb(67, 67, 67);
+    height: 40vh;
+}
+.img-div img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+}
+ul{
+    display: flex;
+    gap: 2vw;
+    position: relative;
+    top: 45vh;
+    left: 10vw;
+    background: none;
+    
+}
+li{
+    list-style-type: none;
+    border: 1px solid black;
+    border-radius: 15px;
+    width: 8%;
+    display: flex;
+    justify-content: center;
+    background: none;
+    box-shadow: 0px 0px 5px 1px rgb(67, 67, 67);
+}
+h1{
+    position: relative;
+    top: 45vh;
+    left: 9vw;
+    background: none;
+    margin: 5px;
+}
+
+p{
+    position: relative;
+    top: 45vh;
+    left: 9vw;
+    background: none;
+    margin: 5px;
+    width: 65vw;
+    height: 17vh ;
+    overflow: auto;
+    margin-bottom: 15px;
+}
+button{
+    position: relative;
+    top: 45vh;
+    background: none;
+    display: flex;
+    margin: auto;
+    color: rgb(53, 88, 152);
+    border-radius: 10px;
+    height: 2em;
+    width: 5rem;
+    background-color: rgb(54, 226, 226);
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 5px 1px rgb(198, 203, 132);
+    border: none;
+}
+</style>
