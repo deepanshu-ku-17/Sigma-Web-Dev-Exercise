@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<script>
+    let input1 = Number(prompt("enter your 1st number"))
+    let input2 = Number(prompt("enter your 2nd number"))
+    let opr = prompt("enter your operation {+, *, -, /}")
+    let rnd = 100*Math.random() // let rnd = Math.floor(Math.random() * 101); 0-100 warna random0-.9 tk value dega 1 kabhi nhi aayega
+    console.log(Math.floor(rnd))
+    if (rnd<11) 
+    {
+        switch (opr) 
+        {
+            case "+":
+                {let ans = input1-input2
+                console.log(ans)}
+                break;
+
+            case "*":
+                {let ans = input1+input2
+                console.log(ans)}
+                break;
+
+            case "-":
+                {let ans = input1/input2
+                console.log(ans)}
+                break;
+
+            case "/":
+                {let ans = input1**input2
+                console.log(ans)}
+                break;
+    
+            default:
+                console.log("Gandi baat")
+                break;
+        }
+    } 
+    else 
+    {
+        switch (opr) 
+        {
+            case "+":
+                {let ans = input1+input2
+                console.log(ans)}
+                break;
+
+            case "*":
+                {let ans = input1*input2
+                console.log(ans)}
+                break;
+
+            case "-":
+                {let ans = input1-input2
+                console.log(ans)}
+                break;
+
+            case "/":
+                {let ans = input1/input2
+                console.log(ans)}
+                break;
+    
+            default:
+                console.log("Gandi baat")
+                break;
+        }
+    }
+    
+</script>
